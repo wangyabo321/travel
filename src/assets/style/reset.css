@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*
+    (1)该文件中 html 的 font-size 为 50px，使用 1rem 正好是 50px，在设计稿是二倍图的时候。100px 的设计稿刚好是 1rem。
+实际情况下，是 0.1rem 等于 5px。 5px/50px = 0.1rem
+        50px = 1rem
+    font-size:50px  等价于 font-size:1rem
+假如有一个设计稿width:100px,height:250px,则换成rem, 则是100px/50px = 2rem, 250px/50px = 5rem
+    如果css里面没有设定html的font-size，则默认浏览器以1rem=16px来换算。
+*/
+
+
+
+html {
+    background-color: #fff;
+    color: #000;
+    font-size: 12px
+}
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,figure,form,fieldset,legend,input,textarea,button,p,blockquote,th,td,pre,xmp {
+    margin: 0;
+    padding: 0
+}
+body,input,textarea,button,select,pre,tt,code,kbd,samp {
+    line-height: 1.5;
+    font-family: tahoma,arial,"Hiragino Sans GB",sans-serif
+}
+h1,h2,h3,h4,h5,h6,small,big,input,textarea,button,select {
+    font-size: 100%
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: tahoma,arial,"Hiragino Sans GB","微软雅黑",sans-serif
+}
+h1,h2,h3,h4,h5,h6,b,strong {
+    font-weight: normal
+}
+address,cite,dfn,em,i,optgroup,var {
+    font-style: normal
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left
+}
+caption,th {
+    text-align: inherit
+}
+ul,ol,menu {
+    list-style: none
+}
+fieldset,img {
+    border: 0
+}
+img,object,input,textarea,button,select {
+    vertical-align: middle
+}
+article,aside,footer,header,section,nav,figure,figcaption,hgroup,details,menu {
+    display: block
+}
+audio,canvas,video {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1
+}
+blockquote:before,blockquote:after,q:before,q:after {
+    content: "\0020"
+}
+textarea {
+    overflow: auto;
+    resize: vertical
+}
+input,textarea,button,select,a {
+    outline: 0 none;
+    border: none;
+}
+button::-moz-focus-inner,input::-moz-focus-inner {
+    padding: 0;
+    border: 0
+}
+mark {
+    background-color: transparent
+}
+a,ins,s,u,del {
+    text-decoration: none
+}
+sup,sub {
+    vertical-align: baseline
+}
+html {
+    overflow-x: hidden;
+    height: 100%;
+    font-size: 50px;
+    -webkit-tap-highlight-color: transparent;
+}
+body {
+    font-family: Arial, "Microsoft Yahei", "Helvetica Neue", Helvetica, sans-serif;
+    color: #333;
+    font-size: .28rem;
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+}
+hr {
+    height: .02rem;
+    margin: .1rem 0;
+    border: medium none;
+    border-top: .02rem solid #cacaca;
+}
+a {
+    color: #25a4bb;
+    text-decoration: none;
+}
