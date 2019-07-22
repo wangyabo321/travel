@@ -2,7 +2,7 @@
     <div class="header-wrapper">
         <div class="header-left"><i class="iconfont icon-jiantou1"></i></div>
         <div class="header-input">
-            <input type="text" placeholder="请输入搜索内容">
+            <input type="text" placeholder="请输入搜索内容" v-focus>
         </div>
         <div class="header-right">北京&nbsp;<i class="iconfont icon-jiantou"></i></div>
     </div>
@@ -11,6 +11,13 @@
 <script>
     export default {
         name: "homeheader",
+        directives:{
+            'focus': {
+                inserted(el){
+                    el.focus();
+                }
+            }
+        }
 
     }
 </script>
