@@ -34,6 +34,7 @@
         background:#fff
     }
     .swiper-wrapper{
+        overflow:hidden;
         width: 100%;
         height:0;
         padding-bottom:31.25%

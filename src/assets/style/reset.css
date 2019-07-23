@@ -88,7 +88,7 @@ sup,sub {
 html {
     overflow-x: hidden;
     height: 100%;
-    font-size: 50px;
+    font-size: 100px;
     -webkit-tap-highlight-color: transparent;
 }
 body {

@@ -1,10 +1,9 @@
 <template>
-
     <swiper :options="swiperOption"  class="icon-wraper">
         <swiper-slide v-for="(page,index) in pages" :key="index">
             <div class="icon-item" v-for="item in page" :key="item.id">
                 <div class="icom-img">
-                    <img :src="item.imgUrl" alt="">
+                    <img :src="item.imgUrl" alt="图片未显示">
                 </div>
                 <p>{{item.desc}}</p>
             </div>
@@ -22,7 +21,6 @@
         data(){
             return{
                 swiperOption: {
-                    autoplay:true,
                     loop:true,
                     pagination: {
                         el: '.swiper-pagination',
@@ -55,10 +53,10 @@
             float:left;
             box-sizing:border-box;
             width:25%;
-            margin-top:10px;
+            margin-top:.1rem;
             .icom-img{
                 box-sizing:border-box
-                padding:0 15px;
+                padding:0 .15rem;
                 width:100%;
                 img{
                     width:100%;
@@ -66,8 +64,8 @@
             }
             p{
                 text-align: center;
-                font-size: 12px;
-                line-height: 20px;
+                font-size: .12rem;
+                line-height: .2rem;
                 overflow:hidden;
                 white-space:nowrap;
                 text-overflow:ellipsis;
