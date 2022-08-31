@@ -1,7 +1,5 @@
 <template>
   <div>
-    <div>12323132132132123</div>
-    <div>1111111111111111111111111111</div>
     <HomeHeader></HomeHeader>
     <HomeSwiper :swiperLists="swiperLists"></HomeSwiper>
     <HomeIcon :iconLists="iconLists"></HomeIcon>
